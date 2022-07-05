@@ -20,16 +20,16 @@ MAC=$(ip link show | awk '$1 == "link/ether" {print $2}')
 SUDO=$(grep -c 'COMMAND' /var/log/sudo/sudo.log)
 
 wall "
-    Architecture: ${ARCH}
-    CPU physical: ${PCPU}
-    vCPU: ${VCPU}
-    Memory Usage: ${USEDRAM}/ ${FULLRAM}MB (${PCTRAM}%)
-    Disk Usage: ${USEDDISK}/${FULLDISK}MB (${PCTDISK}%)
-    CPU load: ${CPU}
-    Last boot: ${LASTBOOT}
-    LVM use: ${LVM}
-    Connection TCP: ${TCP} ${TCPMSSG}
-    User log: ${USERLOG}
-    Network: ${IP} (${MAC})
-    Sudo: ${SUDO} cmd
+    # Architecture: ${ARCH}
+    # CPU physical: ${PCPU}
+    # vCPU: ${VCPU}
+    # Memory Usage: ${USEDRAM}/ ${FULLRAM}MB (${PCTRAM}%)
+    # Disk Usage: ${USEDDISK}/${FULLDISK}MB (${PCTDISK}%)
+    # CPU load: ${CPU}
+    # Last boot: ${LASTBOOT}
+    # LVM use: ${LVM}
+    # Connection TCP: ${TCP} ${TCPMSSG}
+    # User log: ${USERLOG}
+    # Network: ${IP} (${MAC})
+    # Sudo: ${SUDO} cmd
 "
